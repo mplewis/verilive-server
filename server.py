@@ -1,6 +1,10 @@
 import sys
+import tempfile
+import shutil
+import subprocess
+from os import path
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 
 import config
 
@@ -19,7 +23,30 @@ def about():
 
 @app.route('/compile', methods=['POST'])
 def compile():
-    pass
+    for arg in ('module', 'testbench'):
+        if arg not in request.json:
+            return 'Argument %s not found in posted JSON' % arg, 400
+
+    temp_dir = tempfile.mkdtemp(prefix=config.Misc.TEMP_DIR_PREFIX)
+    module_path = path.join(temp_dir, 'module.v')
+    testbench_path = path.join(temp_dir, 'testbench.v')
+    compiled_path = path.join(temp_dir, 'compiled.vvp')
+    waveform_path = path.join(temp_dir, 'waveform.vcd')
+
+    with open(module_path, 'w') as f:
+        f.write(request.json['module'])
+    with open(testbench_path, 'w') as f:
+        f.write(request.json['testbench'])
+
+    subprocess.call(['iverilog', '-o', compiled_path, module_path,
+                     testbench_path], cwd=temp_dir)
+    stdout = (subprocess.check_output(['vvp', compiled_path], cwd=temp_dir)
+              .decode('utf-8'))
+
+    with open(waveform_path) as f:
+        waveform = f.read()
+    shutil.rmtree(temp_dir)
+    return jsonify(stdout=stdout, waveform=waveform)
 
 
 def main():
