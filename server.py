@@ -13,6 +13,13 @@ app = Flask(__name__)
 app.config.from_object(config.Flask)
 
 
+@app.after_request
+def allow_cors(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+    return response
+
+
 @app.route('/')
 def about():
     version = '.'.join([str(x) for x in config.Metadata.VERSION])
