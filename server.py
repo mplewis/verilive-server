@@ -50,8 +50,11 @@ def compile():
     stdout = (subprocess.check_output(['vvp', compiled_path], cwd=temp_dir)
               .decode('utf-8'))
 
-    with open(waveform_path) as f:
-        waveform = f.read()
+    try:
+        with open(waveform_path) as f:
+            waveform = f.read()
+    except OSError:
+        waveform = None
     shutil.rmtree(temp_dir)
     return jsonify(stdout=stdout, waveform=waveform)
 
