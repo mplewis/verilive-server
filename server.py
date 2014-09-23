@@ -45,18 +45,30 @@ def compile():
     with open(testbench_path, 'w') as f:
         f.write(request.json['testbench'])
 
-    subprocess.call(['iverilog', '-o', compiled_path, module_path,
-                     testbench_path], cwd=temp_dir)
+    start_time = time.time()
+    subprocess.call(['iverilog',
+                     '-N', netlist_path, '-o', compiled_path,
+                     module_path, testbench_path],
+                    cwd=temp_dir)
     stdout = (subprocess.check_output(['vvp', compiled_path], cwd=temp_dir)
               .decode('utf-8'))
+    end_time = time.time()
+
+    with open(netlist_path) as f:
+        raw_netlist = f.read()
+
+    netlist = ivernetp.process_netlist.netlist_to_json(raw_netlist)
 
     try:
         with open(waveform_path) as f:
             waveform = f.read()
     except OSError:
         waveform = None
+
     shutil.rmtree(temp_dir)
-    return jsonify(stdout=stdout, waveform=waveform)
+
+    return jsonify(stdout=stdout, waveform=waveform, netlist=netlist,
+                   seconds=end_time - start_time)
 
 
 def main():
