@@ -1,12 +1,16 @@
+import config
+
+import ivernetp
+
+from flask import Flask, jsonify, request
+
 import sys
 import tempfile
 import shutil
 import subprocess
+import time
 from os import path
-
-from flask import Flask, jsonify, request
-
-import config
+from multiprocessing import Process, Queue
 
 
 app = Flask(__name__)
@@ -30,6 +34,7 @@ def about():
 
 @app.route('/compile', methods=['POST'])
 def compile():
+
     for arg in ('module', 'testbench'):
         if arg not in request.json:
             return 'Argument %s not found in posted JSON' % arg, 400
@@ -37,6 +42,7 @@ def compile():
     temp_dir = tempfile.mkdtemp(prefix=config.Misc.TEMP_DIR_PREFIX)
     module_path = path.join(temp_dir, 'module.v')
     testbench_path = path.join(temp_dir, 'testbench.v')
+    netlist_path = path.join(temp_dir, 'netlist')
     compiled_path = path.join(temp_dir, 'compiled.vvp')
     waveform_path = path.join(temp_dir, 'waveform.vcd')
 
