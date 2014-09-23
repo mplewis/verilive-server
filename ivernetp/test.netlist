@@ -1,0 +1,232 @@
+DESIGN TIME PRECISION: 10e-10
+SCOPES:
+bargraph_testbench module <bargraph_testbench> instance
+    timescale = 10e-9 / 10e-10
+    reg: clk[0:0 count=1] logic (eref=2, lref=2) scope=bargraph_testbench #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=x (x)
+        [0]: 0x7fbd08d08a60 bargraph_testbench.r.t0.clk
+    wire: out[0:0 count=1] logic (eref=1, lref=0) scope=bargraph_testbench #(0x0,0x0,0x0) vector_width=3 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0a610 bargraph_testbench.b.out
+    wire: to_bg[0:0 count=1] logic (eref=1, lref=0) scope=bargraph_testbench #(0x0,0x0,0x0) vector_width=3 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0a950 bargraph_testbench.to_bg
+bargraph_testbench.b module <bargraph3> instance
+    timescale = 10e-9 / 10e-10
+    wire: _s0[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0a630 bargraph_testbench.b._s0
+    wire: _s11[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0b610 bargraph_testbench.b._s11
+    wire: _s13[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0b9c0 bargraph_testbench.b._s13
+    wire: _s15[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0bc50 bargraph_testbench.b._s15
+    wire: _s17[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0c000 bargraph_testbench.b._s17
+    wire: _s19[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0c290 bargraph_testbench.b._s19
+    wire: _s20[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0c020 bargraph_testbench.b._s20
+    wire: _s22[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0c7d0 bargraph_testbench.b._s22
+    wire: _s25[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0cc40 bargraph_testbench.b._s25
+    wire: _s27[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0ced0 bargraph_testbench.b._s27
+    wire: _s29[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0d160 bargraph_testbench.b._s29
+    wire: _s3[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0aab0 bargraph_testbench.b._s3
+    wire: _s5[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0ad40 bargraph_testbench.b._s5
+    wire: _s7[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0afd0 bargraph_testbench.b._s7
+    wire: _s9[0:0 count=1] (local) logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0b380 bargraph_testbench.b._s9
+    wire: a[0:0 count=1] logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0ad60 bargraph_testbench.b.a
+    wire: b[0:0 count=1] logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0b120 bargraph_testbench.b.b
+    wire: c[0:0 count=1] logic (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0b760 bargraph_testbench.b.c
+    wire: in[0:0 count=1] logic input (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=3 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0a950 bargraph_testbench.to_bg
+    wire: out[0:0 count=1] logic output (eref=0, lref=0) scope=bargraph_testbench.b #(0x0,0x0,0x0) vector_width=3 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0a610 bargraph_testbench.b.out
+bargraph_testbench.r module <ripple3> instance
+    timescale = 10e-9 / 10e-10
+    wire: clk[0:0 count=1] logic input (eref=0, lref=0) scope=bargraph_testbench.r #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d08a60 bargraph_testbench.r.t0.clk
+    wire: out[0:0 count=1] logic output (eref=0, lref=0) scope=bargraph_testbench.r #(0x0,0x0,0x0) vector_width=3 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0a950 bargraph_testbench.to_bg
+    wire: tmp0[0:0 count=1] logic (eref=0, lref=0) scope=bargraph_testbench.r #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d097b0 bargraph_testbench.r.tmp0
+    wire: tmp1[0:0 count=1] logic (eref=0, lref=0) scope=bargraph_testbench.r #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0a040 bargraph_testbench.r.tmp1
+    wire: tmp2[0:0 count=1] logic (eref=0, lref=0) scope=bargraph_testbench.r #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0a110 bargraph_testbench.r.tmp2
+bargraph_testbench.r.t2 module <tff> instance
+    timescale = 10e-9 / 10e-10
+    event _s0; nprobe=1 scope=bargraph_testbench.r.t2 // ./tff.v:15
+    wire: clk[0:0 count=1] logic input (eref=0, lref=0) scope=bargraph_testbench.r.t2 #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0a040 bargraph_testbench.r.tmp1
+    reg: q[0:0 count=1] logic output (eref=0, lref=2) scope=bargraph_testbench.r.t2 #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=x (x)
+        [0]: 0x7fbd08d0a330 bargraph_testbench.r.t2.q
+    reg: q_not[0:0 count=1] logic output (eref=0, lref=2) scope=bargraph_testbench.r.t2 #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=x (x)
+        [0]: 0x7fbd08d0a110 bargraph_testbench.r.tmp2
+    wire: t[0:0 count=1] logic input (eref=2, lref=0) scope=bargraph_testbench.r.t2 #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0a110 bargraph_testbench.r.tmp2
+bargraph_testbench.r.t1 module <tff> instance
+    timescale = 10e-9 / 10e-10
+    event _s0; nprobe=1 scope=bargraph_testbench.r.t1 // ./tff.v:15
+    wire: clk[0:0 count=1] logic input (eref=0, lref=0) scope=bargraph_testbench.r.t1 #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d097b0 bargraph_testbench.r.tmp0
+    reg: q[0:0 count=1] logic output (eref=0, lref=2) scope=bargraph_testbench.r.t1 #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=x (x)
+        [0]: 0x7fbd08d09aa0 bargraph_testbench.r.t1.q
+    reg: q_not[0:0 count=1] logic output (eref=0, lref=2) scope=bargraph_testbench.r.t1 #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=x (x)
+        [0]: 0x7fbd08d0a040 bargraph_testbench.r.tmp1
+    wire: t[0:0 count=1] logic input (eref=2, lref=0) scope=bargraph_testbench.r.t1 #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d0a040 bargraph_testbench.r.tmp1
+bargraph_testbench.r.t0 module <tff> instance
+    timescale = 10e-9 / 10e-10
+    event _s0; nprobe=1 scope=bargraph_testbench.r.t0 // ./tff.v:15
+    wire: clk[0:0 count=1] logic input (eref=0, lref=0) scope=bargraph_testbench.r.t0 #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d08a60 bargraph_testbench.r.t0.clk
+    reg: q[0:0 count=1] logic output (eref=0, lref=2) scope=bargraph_testbench.r.t0 #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=x (x)
+        [0]: 0x7fbd08d09220 bargraph_testbench.r.t0.q
+    reg: q_not[0:0 count=1] logic output (eref=0, lref=2) scope=bargraph_testbench.r.t0 #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=x (x)
+        [0]: 0x7fbd08d097b0 bargraph_testbench.r.tmp0
+    wire: t[0:0 count=1] logic input (eref=2, lref=0) scope=bargraph_testbench.r.t0 #(0x0,0x0,0x0) vector_width=1 pin_count=1 init=z (x)
+        [0]: 0x7fbd08d097b0 bargraph_testbench.r.tmp0
+ELABORATED NODES:
+posedge -> bargraph_testbench.r.t0._s0; 
+    0 pin0 I (strong0 strong1): 0x7fbd08d08a60 bargraph_testbench.r.t0.clk
+NetPartSelect(PV): _s1 #(.,.,.) off=0 wid=1
+    0 pin0 I (strong0 strong1): 0x7fbd08d09220 bargraph_testbench.r.t0.q
+    1 pin1 O (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+posedge -> bargraph_testbench.r.t1._s0; 
+    0 pin0 I (strong0 strong1): 0x7fbd08d097b0 bargraph_testbench.r.tmp0
+NetPartSelect(PV): _s3 #(.,.,.) off=1 wid=1
+    0 pin0 I (strong0 strong1): 0x7fbd08d09aa0 bargraph_testbench.r.t1.q
+    1 pin1 O (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+posedge -> bargraph_testbench.r.t2._s0; 
+    0 pin0 I (strong0 strong1): 0x7fbd08d0a040 bargraph_testbench.r.tmp1
+NetPartSelect(PV): _s5 #(.,.,.) off=2 wid=1
+    0 pin0 I (strong0 strong1): 0x7fbd08d0a330 bargraph_testbench.r.t2.q
+    1 pin1 O (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+NetPartSelect(PV): _s1 #(.,.,.) off=0 wid=1
+    0 pin0 I (strong0 strong1): 0x7fbd08d0a630 bargraph_testbench.b._s0
+    1 pin1 O (strong0 strong1): 0x7fbd08d0a610 bargraph_testbench.b.out
+logic: or #(0x0,0x0,0x0) o0<0.0> scope=bargraph_testbench.b
+    0 pin0 O (strong0 strong1): 0x7fbd08d0a630 bargraph_testbench.b._s0
+    1 pin1 I (strong0 strong1): 0x7fbd08d0aab0 bargraph_testbench.b._s3
+    2 pin2 I (strong0 strong1): 0x7fbd08d0ad40 bargraph_testbench.b._s5
+    3 pin3 I (strong0 strong1): 0x7fbd08d0afd0 bargraph_testbench.b._s7
+NetPartSelect(VP): _s2 #(.,.,.) off=2 wid=1
+    0 pin0 O (strong0 strong1): 0x7fbd08d0aab0 bargraph_testbench.b._s3
+    1 pin1 I (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+NetPartSelect(VP): _s4 #(.,.,.) off=1 wid=1
+    0 pin0 O (strong0 strong1): 0x7fbd08d0ad40 bargraph_testbench.b._s5
+    1 pin1 I (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+NetPartSelect(VP): _s6 #(.,.,.) off=0 wid=1
+    0 pin0 O (strong0 strong1): 0x7fbd08d0afd0 bargraph_testbench.b._s7
+    1 pin1 I (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+logic: and #(0x0,0x0,0x0) o1a<0.0> scope=bargraph_testbench.b
+    0 pin0 O (strong0 strong1): 0x7fbd08d0ad60 bargraph_testbench.b.a
+    1 pin1 I (strong0 strong1): 0x7fbd08d0b380 bargraph_testbench.b._s9
+    2 pin2 I (strong0 strong1): 0x7fbd08d0b610 bargraph_testbench.b._s11
+NetPartSelect(VP): _s8 #(.,.,.) off=0 wid=1
+    0 pin0 O (strong0 strong1): 0x7fbd08d0b380 bargraph_testbench.b._s9
+    1 pin1 I (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+NetPartSelect(VP): _s10 #(.,.,.) off=1 wid=1
+    0 pin0 O (strong0 strong1): 0x7fbd08d0b610 bargraph_testbench.b._s11
+    1 pin1 I (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+logic: and #(0x0,0x0,0x0) o1b<0.0> scope=bargraph_testbench.b
+    0 pin0 O (strong0 strong1): 0x7fbd08d0b120 bargraph_testbench.b.b
+    1 pin1 I (strong0 strong1): 0x7fbd08d0b9c0 bargraph_testbench.b._s13
+    2 pin2 I (strong0 strong1): 0x7fbd08d0bc50 bargraph_testbench.b._s15
+NetPartSelect(VP): _s12 #(.,.,.) off=1 wid=1
+    0 pin0 O (strong0 strong1): 0x7fbd08d0b9c0 bargraph_testbench.b._s13
+    1 pin1 I (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+NetPartSelect(VP): _s14 #(.,.,.) off=2 wid=1
+    0 pin0 O (strong0 strong1): 0x7fbd08d0bc50 bargraph_testbench.b._s15
+    1 pin1 I (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+logic: and #(0x0,0x0,0x0) o1c<0.0> scope=bargraph_testbench.b
+    0 pin0 O (strong0 strong1): 0x7fbd08d0b760 bargraph_testbench.b.c
+    1 pin1 I (strong0 strong1): 0x7fbd08d0c000 bargraph_testbench.b._s17
+    2 pin2 I (strong0 strong1): 0x7fbd08d0c290 bargraph_testbench.b._s19
+NetPartSelect(VP): _s16 #(.,.,.) off=0 wid=1
+    0 pin0 O (strong0 strong1): 0x7fbd08d0c000 bargraph_testbench.b._s17
+    1 pin1 I (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+NetPartSelect(VP): _s18 #(.,.,.) off=2 wid=1
+    0 pin0 O (strong0 strong1): 0x7fbd08d0c290 bargraph_testbench.b._s19
+    1 pin1 I (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+NetPartSelect(PV): _s21 #(.,.,.) off=1 wid=1
+    0 pin0 I (strong0 strong1): 0x7fbd08d0c020 bargraph_testbench.b._s20
+    1 pin1 O (strong0 strong1): 0x7fbd08d0a610 bargraph_testbench.b.out
+logic: or #(0x0,0x0,0x0) o1<0.0> scope=bargraph_testbench.b
+    0 pin0 O (strong0 strong1): 0x7fbd08d0c020 bargraph_testbench.b._s20
+    1 pin1 I (strong0 strong1): 0x7fbd08d0ad60 bargraph_testbench.b.a
+    2 pin2 I (strong0 strong1): 0x7fbd08d0b120 bargraph_testbench.b.b
+    3 pin3 I (strong0 strong1): 0x7fbd08d0b760 bargraph_testbench.b.c
+NetPartSelect(PV): _s23 #(.,.,.) off=2 wid=1
+    0 pin0 I (strong0 strong1): 0x7fbd08d0c7d0 bargraph_testbench.b._s22
+    1 pin1 O (strong0 strong1): 0x7fbd08d0a610 bargraph_testbench.b.out
+logic: and #(0x0,0x0,0x0) o2<0.0> scope=bargraph_testbench.b
+    0 pin0 O (strong0 strong1): 0x7fbd08d0c7d0 bargraph_testbench.b._s22
+    1 pin1 I (strong0 strong1): 0x7fbd08d0cc40 bargraph_testbench.b._s25
+    2 pin2 I (strong0 strong1): 0x7fbd08d0ced0 bargraph_testbench.b._s27
+    3 pin3 I (strong0 strong1): 0x7fbd08d0d160 bargraph_testbench.b._s29
+NetPartSelect(VP): _s24 #(.,.,.) off=2 wid=1
+    0 pin0 O (strong0 strong1): 0x7fbd08d0cc40 bargraph_testbench.b._s25
+    1 pin1 I (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+NetPartSelect(VP): _s26 #(.,.,.) off=1 wid=1
+    0 pin0 O (strong0 strong1): 0x7fbd08d0ced0 bargraph_testbench.b._s27
+    1 pin1 I (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+NetPartSelect(VP): _s28 #(.,.,.) off=0 wid=1
+    0 pin0 O (strong0 strong1): 0x7fbd08d0d160 bargraph_testbench.b._s29
+    1 pin1 I (strong0 strong1): 0x7fbd08d0a950 bargraph_testbench.to_bg
+ELABORATED BRANCHES:
+ELABORATED PROCESSES:
+initial  /* bargraph_test.v:16 in bargraph_testbench */
+  begin
+      {clk} = 1'd0;
+      $display("Simulation start!");
+      $display("\011\011Time\011Clock\011In\011Out");
+      $monitor("%d\011%b\011%b\011%b", $time(), clk[0:0], to_bg[2:0], out[2:0]);
+      #2000
+        $finish;
+  end
+always  /* bargraph_test.v:13 in bargraph_testbench */
+  #100
+    {clk} = ~(clk[0:0]);
+always  /* ./tff.v:15 in bargraph_testbench.r.t2 */
+  @(bargraph_testbench.r.t2._s0)  // ./tff.v:15
+    begin
+        {q} <= t[0:0];
+        {q_not} <= ~(t[0:0]);
+    end
+initial  /* ./tff.v:10 in bargraph_testbench.r.t2 */
+  begin
+      {q} = 'sd0;
+      {q_not} = 1'sd-1;
+  end
+always  /* ./tff.v:15 in bargraph_testbench.r.t1 */
+  @(bargraph_testbench.r.t1._s0)  // ./tff.v:15
+    begin
+        {q} <= t[0:0];
+        {q_not} <= ~(t[0:0]);
+    end
+initial  /* ./tff.v:10 in bargraph_testbench.r.t1 */
+  begin
+      {q} = 'sd0;
+      {q_not} = 1'sd-1;
+  end
+always  /* ./tff.v:15 in bargraph_testbench.r.t0 */
+  @(bargraph_testbench.r.t0._s0)  // ./tff.v:15
+    begin
+        {q} <= t[0:0];
+        {q_not} <= ~(t[0:0]);
+    end
+initial  /* ./tff.v:10 in bargraph_testbench.r.t0 */
+  begin
+      {q} = 'sd0;
+      {q_not} = 1'sd-1;
+  end
