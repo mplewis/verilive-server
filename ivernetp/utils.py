@@ -33,14 +33,15 @@ def leading_spaces(line):
 def group_lines(lines):
     groups = []
     group = []
-    for line in lines:
-        if leading_spaces(line) == 0:
-            if group:
-                groups.append(group)
-                group = []
-        group.append(line)
-    if group:
-        groups.append(group)
+    if lines:
+        for line in lines:
+            if leading_spaces(line) == 0:
+                if group:
+                    groups.append(group)
+                    group = []
+            group.append(line)
+        if group:
+            groups.append(group)
     return groups
 
 
