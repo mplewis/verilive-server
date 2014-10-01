@@ -1,5 +1,5 @@
 class Flask:
-    DEBUG = True
+    DEBUG = False
     HOST = '0.0.0.0'
 
 
