@@ -22,11 +22,13 @@ class CompileTimeoutError(Exception):
 
 
 def compile_task(paths, result_queue):
-    cmd = ['iverilog', '-N', paths['netlist'], '-o', paths['compiled'],
+    cmd = [config.Compiler.IVERILOG_PATH,
+           '-N', paths['netlist'], '-o', paths['compiled'],
            paths['module'], paths['testbench']]
     try:
         subprocess.check_call(cmd, cwd=paths['temp_dir'])
-        stdout = (subprocess.check_output(['vvp', paths['compiled']],
+        stdout = (subprocess.check_output([config.Compiler.VVP_PATH,
+                                           paths['compiled']],
                                           cwd=paths['temp_dir'])
                   .decode('utf-8'))
     except subprocess.CalledProcessError as e:
